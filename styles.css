@@ -1,65 +1,164 @@
-body {
-    text-align: center;
+/* Reset defaults */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body */
+  body {
     font-family: Arial, sans-serif;
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
-img {
-    width: 400px;
-    margin-bottom: 20px;
-}
-
-input {
+    background-color: #eef4f9;  /* light blue-gray background */
+    text-align: center;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    background-image: url('https://source.unsplash.com/1600x900/?world-map');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .hero-overlay {
+    background: linear-gradient(135deg, rgba(0, 51, 102, 0.8), rgba(0, 102, 153, 0.8));
+    padding: 20px 40px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+  }
+  
+  /* Search Section */
+  .search-section {
+    margin-bottom: 30px;
+  }
+  
+  .search-container {
+    margin-top: 15px;
+  }
+  
+  .search-container label {
+    font-size: 1.1rem;
+    color: #003366;
+  }
+  
+  .search-container input {
     padding: 10px;
     width: 60%;
     font-size: 16px;
     margin-right: 10px;
-}
-
-button {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-container input:focus {
+    outline: none;
+    border-color: #005f99;
+  }
+  
+  .search-container button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
+    background: linear-gradient(135deg, #005f99, #007acc);
+    color: #fff;
     border: none;
     border-radius: 5px;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-section {
-    margin-top: 20px;
-    background-color: #f9f9f9;
-    padding: 15px;
+    transition: background 0.3s ease;
+  }
+  
+  .search-container button:hover {
+    background: linear-gradient(135deg, #004c80, #006bb3);
+  }
+  
+  /* Information Sections */
+  .info-section {
+    background-color: #fff;
+    padding: 20px;
     border-radius: 8px;
-    width: 80%;
     max-width: 600px;
+    margin: 20px auto;
     text-align: left;
-    margin: 0 auto;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #007acc;
+  }
+  
+  .info-section h2 {
+    margin-bottom: 15px;
+    color: #003366;
+  }
+  
+  .info-item {
     margin-bottom: 10px;
-}
-
-li img {
+    font-size: 1.1rem;
+  }
+  
+  .info-item strong {
+    color: #005f99;
+  }
+  
+  /* Bordering Countries List */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  li img {
     width: 20px;
     height: 15px;
     margin-right: 10px;
-}
-
-#flag img {
+  }
+  
+  /* Flag image style */
+  #flag img {
     width: 50px;
-    height: 30px;
-}
+    height: auto;
+  }
+  
+  /* Loading & Error messages */
+  #error {
+    color: #D8000C;
+    
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  #loading {
+    font-style: italic;
+    margin-top: 10px;
+    color: #005f99;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 40px;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
