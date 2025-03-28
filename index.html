@@ -1,31 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>GEOFINDER</title>
+    <meta charset="UTF-8">
+    <title>GeoFinder</title>
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <h1>know more about  countries </h1>
-    <img src="https://media.istockphoto.com/id/1050787688/vector/cute-cartoon-earth.jpg?s=612x612&w=0&k=20&c=lh2qwB6UyzWMR8p9mo2z7GRliv58ykSua1KX2mZD6Ak=" alt="Cartoon Earth">
+    <header class="hero">
+        <div class="hero-overlay">
+            <h1>Discover the World</h1>
+            <p>Your journey to exploring countries starts here.</p>
+        </div>
+    </header>
+          
     
-    <label for="country-name">Enter the name of a country</label>
-    <input type="text" id="country-name" name="country">
-    <button id="submit-btn">Submit</button>
+    <main>
+        <section class="search-section">
+            <div class="search-container">
+                <label for="country-name">Enter the name of a country:</label>
+                <input type="text" id="country-name" name="country" placeholder="e.g., Canada">
+                <button id="submit-btn">Submit</button>
+            </div>
+        </section>
 
-    <section id="country-info">
-        <h2>Country Information</h2>
-        <p><strong>Capital:</strong> <span id="capital"></span></p>
-        <p><strong>Population:</strong> <span id="population"></span></p>
-        <p><strong>Region:</strong> <span id="region"></span></p>
-        <p><strong>Flag:</strong> <span id="flag"></span></p>
-    </section>
+        <section id="country-info" class="info-section">
+            <h2>Country Information</h2>
+            <div class="info-item"><strong>Capital:</strong> <span id="capital"></span></div>
+            <div class="info-item"><strong>Population:</strong> <span id="population"></span></div>
+            <div class="info-item"><strong>Region:</strong> <span id="region"></span></div>
+            <div class="info-item"><strong>Flag:</strong> <span id="flag"></span></div>
+            <div id="loading"></div>
+            <div id="error" class="error"></div>
+        </section>
 
-    <section id="bordering-countries">
-        <h2>Bordering Countries</h2>
-        <ul id="bordering-list"></ul>
-    </section>
+        <section id="bordering-countries" class="info-section">
+            <h2>Bordering Countries</h2>
+            <ul id="bordering-list"></ul>
+        </section>
+    </main>
 
+    <footer>
+        <p>&copy; 2025 GeoFinder</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
+
