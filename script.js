@@ -4,10 +4,11 @@ const population = document.getElementById('population');
 const Languages = document.getElementById('languages');
 const region = document.getElementById('region');
 const flag = document.getElementById('flag');
-const borderingList = document.getElementById('bordering-list');
 const loadingIndicator = document.getElementById('loading');
 const errorContainer = document.getElementById('error');
 const UNSPLASH_ACCESS_KEY = 'n8u3vOd_da4FxFFdsc6aHQpksbrWOtlH4geqBBMThq0';
+
+
 
 document.getElementById('submit-btn').addEventListener('click', async function() {
     const countryname = document.getElementById('country-name').value.trim();
