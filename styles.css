@@ -161,4 +161,35 @@
     color: #666;
     font-size: 0.9rem;
   }
+
+.gallery-grid {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-grid img {
+  max-width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  object-fit: cover;
+  height: 150px;
+}
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (max-width: 600px) {
+  .gallery-grid img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+button:focus {
+  outline: 3px solid #005f99;
+  outline-offset: 2px;
+}
+
   

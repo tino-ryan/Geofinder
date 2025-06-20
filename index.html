@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>GeoFinder</title>
     <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
 </head>
 <body>
     <header class="hero">
@@ -27,16 +30,35 @@
             <h2>Country Information</h2>
             <div class="info-item"><strong>Capital:</strong> <span id="capital"></span></div>
             <div class="info-item"><strong>Population:</strong> <span id="population"></span></div>
+            <div class="info-item"><strong>Languages:</strong> <span id="languages"></span></div>
             <div class="info-item"><strong>Region:</strong> <span id="region"></span></div>
             <div class="info-item"><strong>Flag:</strong> <span id="flag"></span></div>
             <div id="loading"></div>
             <div id="error" class="error"></div>
+            <div class="info-item"><strong>Top Attractions:</strong> <p id="tourism-summary"></p></div>
+
         </section>
 
-        <section id="bordering-countries" class="info-section">
+        <!--<section id="bordering-countries" class="info-section">
             <h2>Bordering Countries</h2>
             <ul id="bordering-list"></ul>
+        </section>-->
+        <section id="gallery" class="info-section">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img id="country-photo" alt="Scenery 1" />
+            <img id="country-photo2" alt="Scenery 2" />
+            <img id="country-photo3" alt="Scenery 3" />
+        </div>
         </section>
+
+        <section id="map-section" class="info-section">
+            <h2>Map</h2>
+            <div id="map" style="height: 400px; border-radius: 8px;"></div>
+        </section>
+
+
+
     </main>
 
     <footer>
@@ -45,4 +67,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
